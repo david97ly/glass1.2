@@ -1,12 +1,21 @@
 .imgs{
-  width:1903px;
-  height:500px;
+  width:800px;
+  height:300px;
 }
 
 img{
   max-height: 100%;
   max-width: 100%;
 }
+
+#formu{
+  display: none;
+}
+
+#cance{
+  display: none;
+}
+
 
 #formu{
   display: none;
@@ -213,17 +222,3 @@ img{
     
   } 
       
-.imgs{
-  width:1903px;
-  height:500px;
-}
-
-
-#formu{
-  display: none;
-}
-
-#cance{
-  display: none;
-}
-
