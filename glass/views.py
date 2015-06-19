@@ -128,7 +128,7 @@ def info(request):
     return render_to_response('login.html',c)
 
 @login_required
-def cfcontacto(request):
+def ccontacto(request):
     titulo = "Login"
     c = {'titulo': titulo}
     return render_to_response('login.html',c)
