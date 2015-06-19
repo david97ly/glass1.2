@@ -108,12 +108,12 @@ def confservicios(request):
     
 def confbanner(request):
     if request.POST:
-        form = MensajeForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
+        formb = MensajeForm(request.POST, request.FILES)
+        if formb.is_valid():
+            formb.save()
             return HttpResponseRedirect("/")
     else:
-        form = MensajeForm()
+        formb = MensajeForm()
         baner = MensajeB.objects.all()
         
     template = "confbanner.html"
