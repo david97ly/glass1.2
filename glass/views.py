@@ -14,9 +14,9 @@ def home(request):
     slider = Slide.objects.all()
     ban = Mensajeb.objects.all()
     
-   for b as ban:
-       if b.valida:
-           ban = b
+    for b as ban:
+        if b.valida:
+            ban = b
     
     primera =""
     segunda = ""
