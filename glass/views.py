@@ -95,18 +95,20 @@ def conf(request):
     template = "cofiguraciones.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
 
-
-def confotos(request):
+@login_required
+def cfotos(request):
+    titulo = "Login"
+    c = {'titulo': titulo}
+    return render_to_response('login.html',c)
+ 
+@login_required  
+def cservicios(request):
     titulo = "Login"
     c = {'titulo': titulo}
     return render_to_response('login.html',c)
     
-def confservicios(request):
-    titulo = "Login"
-    c = {'titulo': titulo}
-    return render_to_response('login.html',c)
-    
-def confbanner(request):
+@login_required   
+def banner(request):
     if request.POST:
         formb = MensajeForm(request.POST, request.FILES)
         if formb.is_valid():
@@ -119,13 +121,14 @@ def confbanner(request):
     template = "confbanner.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
 
- 
-def confinfo(request):
+@login_required
+def info(request):
     titulo = "Login"
     c = {'titulo': titulo}
     return render_to_response('login.html',c)
 
-def confcontacto(request):
+@login_required
+def cfcontacto(request):
     titulo = "Login"
     c = {'titulo': titulo}
     return render_to_response('login.html',c)
