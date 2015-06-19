@@ -1,10 +1,12 @@
 .imgs{
-  width:800px;
-  height:300px;
+  width:600px;
+  height:200px;
+}
+
+img{
   max-height: 100%;
   max-width: 100%;
 }
-
 
 #formu{
   display: none;
