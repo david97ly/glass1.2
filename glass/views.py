@@ -12,11 +12,12 @@ def home(request):
     titulo = "Master AutoGlass"
     template = "home.html"
     slider = Slide.objects.all()
+    
     ban = Mensajeb.objects.all()
     
     for b as ban:
         if b.valida:
-            ban = b
+            ba = b
     
     primera =""
     segunda = ""
