@@ -1,3 +1,19 @@
+.imgs{
+  width:1903px;
+  height:500px;
+}
+
+
+#formu{
+  display: none;
+}
+
+#cance{
+  display: none;
+}
+
+
+
 #contenedor{
 	background: #E0F2F1;
 }
