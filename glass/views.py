@@ -108,12 +108,12 @@ def cservicios(request):
         if formser.is_valid():
             formser.save()
             return HttpResponseRedirect("/cservicios")
-    else:
-        formser = ServiciosForm()
-        servi = Servicios.objects.all()
+     else:
+         formser = ServiciosForm()
+         servi = Servicios.objects.all()
         
-    template = "confservicios.html"
-    return render_to_response(template,context_instance=RequestContext(request,locals()))
+     template = "confservicios.html"
+     return render_to_response(template,context_instance=RequestContext(request,locals()))
     
 @login_required   
 def banner(request):
