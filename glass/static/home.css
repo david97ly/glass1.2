@@ -228,6 +228,10 @@
 #imglogo{
   width: 250px;
 }
+
+.bv{
+  position: absolute;
+}
      /* para el menu 
 .app-navbar{
   background: rgba(0,0,0,0.6);
