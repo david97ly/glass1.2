@@ -110,12 +110,12 @@ def cservicios(request):
 @login_required   
 def banner(request):
     if request.POST:
-        formb = MensajeForm(request.POST, request.FILES)
+        formb = MensajebForm(request.POST, request.FILES)
         if formb.is_valid():
             formb.save()
             return HttpResponseRedirect("/")
     else:
-        formb = MensajeForm()
+        formb = MensajebForm()
         baner = MensajeB.objects.all()
         
     template = "confbanner.html"
