@@ -103,9 +103,17 @@ def cfotos(request):
  
 @login_required  
 def cservicios(request):
-    titulo = "Login"
-    c = {'titulo': titulo}
-    return render_to_response('login.html',c)
+     if request.POST:
+        formser = ServiciosForm(request.POST, request.FILES)
+        if formser.is_valid():
+            formser.save()
+            return HttpResponseRedirect("/cservicios")
+    else:
+        formser = ServiciosForm()
+        servi = Servicios.objects.all()
+        
+    template = "confservicios.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
     
 @login_required   
 def banner(request):
@@ -113,7 +121,7 @@ def banner(request):
         formb = MensajebForm(request.POST, request.FILES)
         if formb.is_valid():
             formb.save()
-            return HttpResponseRedirect("/")
+            return HttpResponseRedirect("/banner")
     else:
         formb = MensajebForm()
         baner = Mensajeb.objects.all()
