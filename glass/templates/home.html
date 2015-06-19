@@ -46,7 +46,7 @@
                   
                   {% if request.user.is_authenticated %}
                    <li><a href="{% url "conf" %}"><span class="glyphicon glyphicon-question-sign">Conf</span></a>
-                   
+                   <div class="navbar-collapse collapse" id="menus">
                    <ul class="nav navbar-nav pull-right">
                   <li><a href="/"><span class="glyphicon glyphicon-home">Inicio{{users}}</span></a></li>
                   <li><a href="/servicios"><span class="glyphicon glyphicon-info-sign">Servicios</span></a></li>
@@ -55,6 +55,7 @@
                   <li><a href="/contacto"><span class="glyphicon glyphicon-phone-alt">Contactenos</span></a></li>
                   <li><a href="/quienes"><span class="glyphicon glyphicon-question-sign">Quienes somos</span></a></li>
                        </ul>
+                       </div>
                    </li>
                   {% endif %}
                   
