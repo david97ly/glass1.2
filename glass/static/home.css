@@ -232,6 +232,15 @@
 .bv{
   position: absolute;
 }
+
+.bv1{
+  position: relative;
+}
+
+#imgb{
+  max-width: 100%;
+  max-height: 100%;
+}
      /* para el menu 
 .app-navbar{
   background: rgba(0,0,0,0.6);
