@@ -246,6 +246,14 @@
 .co{
   background-image: url("imagenes/banner/principal.jpg");
 }
+
+.jumbotron{
+  margin: 0 auto;
+}
+
+.myCarousel{
+  margin: 0 auto;
+}
      /* para el menu 
 .app-navbar{
   background: rgba(0,0,0,0.6);
