@@ -132,6 +132,7 @@
       $(document).on('ready',function(){
         
         $('#new').on('click',mostrarform);
+        $('#cance').on('click',ocultarform);
     //hagamos un cambio
     
         var apli = {
@@ -143,6 +144,12 @@
                 $('#formu').css(apli1);
                 $('#cance').css(apli1);
                  $('#new').css(apli);
+              }; 
+              
+        function ocultarform{
+                $('#formu').css(apli);
+                $('#cance').css(apli);
+                 $('#new').css(apli1);
               }; 
       })
       
