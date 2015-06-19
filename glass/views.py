@@ -116,7 +116,7 @@ def banner(request):
             return HttpResponseRedirect("/")
     else:
         formb = MensajebForm()
-        baner = MensajeB.objects.all()
+        baner = Mensajeb.objects.all()
         
     template = "confbanner.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
