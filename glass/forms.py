@@ -11,6 +11,7 @@ class SlideForm(ModelForm):
 class MensajebForm(ModelForm):
     class Meta:
         model = Mensajeb
+        exclude = ("foto",)
         
 class InfoForm(ModelForm):
     class Meta:

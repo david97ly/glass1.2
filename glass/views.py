@@ -107,9 +107,18 @@ def confservicios(request):
     return render_to_response('login.html',c)
     
 def confbanner(request):
-    titulo = "Login"
-    c = {'titulo': titulo}
-    return render_to_response('login.html',c)
+    if request.POST:
+        form = MensajeForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect("/")
+    else:
+        form = MensajeForm()
+        baner = MensajeB.objects.all()
+        
+    template = "confbanner.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+
  
 def confinfo(request):
     titulo = "Login"
