@@ -240,10 +240,12 @@
 }
 
 #imgb{
+  margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
 }
 
+     /*
 .co{
   background-image: url("imagenes/banner/principal.jpg");
 }
@@ -256,8 +258,7 @@
 .myCarousel{
   margin: 0 auto;
   padding: 0px;
-}
-     /* para el menu 
+} para el menu 
 .app-navbar{
   background: rgba(0,0,0,0.6);
   border-radius: 50;
