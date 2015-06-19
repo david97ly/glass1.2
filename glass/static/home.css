@@ -249,10 +249,12 @@
 
 .jumbotron{
   margin: 0 auto;
+  padding:0px;
 }
 
 .myCarousel{
   margin: 0 auto;
+  padding: 0px;
 }
      /* para el menu 
 .app-navbar{
