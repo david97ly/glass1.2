@@ -6,7 +6,7 @@
      {% load static from staticfiles  %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/boot/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="{% static "configuraciones.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "confservicios.css" %}">
     <link rel="shortcut icon" type="image/x-icon" href="../static/imagenes/icono/credit-cards.ico" />
      <style type="text/css">
       
@@ -90,7 +90,7 @@
   
       <!-- Indicators -->
    
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
+       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 cuadro">
          <div class="thumbnail">
            <img  id="imgs"  class="img-responsive img-service" src="{{ s.foto.url }}" alt="...">
            <div class="caption">
@@ -104,12 +104,12 @@
            </div>
          </div>
        </div>
-      </div><!-- /.carousel -->
-        
-      </div>
+  
       
       {% endfor %} 
-
+    </div><!-- /.carousel -->
+        
+      </div>
       
     <script src="/static/js/jquery-1.2.6.min.js"></script>
     <script src="/static/js/ajax.js"></script>
