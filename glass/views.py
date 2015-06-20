@@ -60,13 +60,8 @@ def contacto(request):
 def fotos(request):
     titulo = "Galeria de fots"
     template = "fotos.html"
-    foto = Fotos.objects.all()
-    fot = ""
-    for f in foto:
-        if f.valida:
-           fo = f
-    fot = fo
-                 
+    fot = Fotos.objects.all()
+       
     return render_to_response(template,context_instance=RequestContext(request,locals()))
     
     
