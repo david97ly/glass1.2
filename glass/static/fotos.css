@@ -42,9 +42,5 @@ img{
       -o-transition: all linear 0.2s;
       -ms-transition: all linear 0.2s;
       -moz-transition:all linear 0.2s;
-      position: fixed;
-   width:355px;
-   height: 355px;
-   
-   
+   background: lightskyblue;
 }
