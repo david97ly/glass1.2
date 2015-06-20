@@ -64,7 +64,7 @@ def fotos(request):
    
     for f in foto:
         if f.valida:
-           fot = b
+           fot = f
                   
     return render_to_response(template,context_instance=RequestContext(request,locals()))
     
