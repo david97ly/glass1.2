@@ -95,7 +95,7 @@
            <img  id="imgs"  class="img-responsive img-service" src="{{ s.foto.url }}" alt="...">
            <div class="caption">
              <h3>{{ s.titulo }}</h3>
-             <p>{{ s.informacion }}</p>
+             <pre width=5>{{ s.informacion }}</pre>
                 {% if s.valida %}
              <p><a href="/detalleservice" class="btn btn-primary" role="button">Desabilidado &raquo;</a></p>
                 {% else %}
