@@ -81,10 +81,10 @@
            <div id="carru" class="container">
               <button class="btn btn-large btn-primary " id="new">Agregar nuevo Slider</button>
            <!--    <p><a class="btn btn-large btn-primary " id="new" href="" >Agregar nuevo Slider</a></p>-->
-               
+               <br>
+    <br>
                        {% for s in servi %}
-    <br>
-    <br>
+    
             <!-- Carousel
     ================================================== -->
   
@@ -98,9 +98,9 @@
              <p>{{ s.informacion }}</p>
                 {% if s.valida %}
              <p><a href="/detalleservice" class="btn btn-primary" role="button">Desabilidado &raquo;</a></p>
-             {% else %}
+                {% else %}
              <p><a href="/detalleservice" class="btn btn-primary" role="button">Habilitado &raquo;</a></p>
-              {% endif %}
+                {% endif %}
            </div>
          </div>
        </div>
