@@ -6,7 +6,7 @@
      {% load static from staticfiles  %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/boot/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="{% static "fotos.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "confotos.css" %}">
     <link rel="shortcut icon" type="image/x-icon" href="../static/imagenes/icono/credit-cards.ico" />
      <style type="text/css">
       
@@ -79,7 +79,7 @@
       
            <!--      <div id="carru" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 container"> -->
            <div id="carru" class="container">
-              <button class="btn btn-large btn-primary " id="new">Agregar nuevo Servicio</button>
+              <button class="btn btn-large btn-primary " id="new">Agregar Foto</button>
            <!--    <p><a class="btn btn-large btn-primary " id="new" href="" >Agregar nuevo Slider</a></p>-->
                <br>
     <br>
@@ -96,9 +96,9 @@
            <div class="caption">
              <h3>{{ s.nombre }}</h3>          
                 {% if s.valida %}
-             <p><a href="/detalleservice" class="btn btn-primary" role="button">Desabilidado &raquo;</a></p>
+             <p><a href="/detalleservice" class="btn btn-primary" role="button">Deshabilitar &raquo;</a></p>
                 {% else %}
-             <p><a href="/detalleservice" class="btn btn-primary" role="button">Habilitado &raquo;</a></p>
+             <p><a href="/detalleservice" class="btn btn-primary" role="button">Habilitar &raquo;</a></p>
                 {% endif %}
            </div>
          </div>
