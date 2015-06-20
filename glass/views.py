@@ -62,7 +62,7 @@ def fotos(request):
     template = "fotos.html"
     foto = Fotos.objects.all()
    
-    for f in foo:
+    for f in foto:
         if f.valida:
            fot = b
                   
