@@ -35,12 +35,12 @@
             </div>
             <div class="navbar-collapse collapse" id="menus">
              <ul class="nav navbar-nav pull-right">
-                  <li><a href="/"><span class="glyphicon glyphicon-home">Slider</span></a></li>
-                  <li><a href="/servicios"><span class="glyphicon glyphicon-info-sign">Baner W</span></a></li>
+                  <li><a href="{% url "conf" %}"><span class="glyphicon glyphicon-home">Slider</span></a></li>
+                  <li><a href="{% url "banner" %}"><span class="glyphicon glyphicon-info-sign">Baner W</span></a></li>
                   <li><a href="/ubicacion"><span class="glyphicon glyphicon-map-marker">Contactos</span></a></li>
                   <li><a href="/fotos"><span class="glyphicon glyphicon-picture"></span>Fotos</a></li>
-                  <li><a href="/contacto"><span class="glyphicon glyphicon-phone-alt">Servicios</span></a></li>
-                  <li><a href="/quienes"><span class="glyphicon glyphicon-question-sign">Home</span></a></li>
+                  <li><a href="{% url "cservicios" %}"><span class="glyphicon glyphicon-phone-alt">Servicios</span></a></li>
+                  <li><a href="><span class="{% url "home" %}"glyphicon glyphicon-question-sign">Home</span></a></li>
                </ul>
             </div>
           </div>
