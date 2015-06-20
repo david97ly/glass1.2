@@ -27,5 +27,5 @@
 
 .sinfo{
   height: 50px;
-   overflow:scroll;
+   overflow:inherit;
 }
