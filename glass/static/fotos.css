@@ -29,3 +29,13 @@
   height: 100px;
    overflow:auto;
 }
+
+img{
+  cursor: hand;
+}
+
+img:hover{
+  -webkit-transition: height 2s;
+   width:355px;
+   height: 355px;
+}
