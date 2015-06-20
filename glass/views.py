@@ -58,9 +58,15 @@ def contacto(request):
     
     
 def fotos(request):
-    titulo = "Galeria de fotos"
-    c = {'titulo': titulo}
-    return render_to_response('fotos.html',c)
+    titulo = "Galeria de fots"
+    template = "fotos.html"
+    foto = Fotos.objects.all()
+   
+    for f in foo:
+        if f.valida:
+           fot = b
+                  
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
     
     
 def quienes(request):
@@ -97,9 +103,17 @@ def conf(request):
 
 @login_required
 def cfotos(request):
-    titulo = "Login"
-    c = {'titulo': titulo}
-    return render_to_response('login.html',c)
+    if request.POST:
+        formf = FotosForm(request.POST, request.FILES)
+        if formf.is_valid():
+            formf.save()
+            return HttpResponseRedirect("/cfotos")
+    else:
+        formf = FotosForm()
+        fot = Fotos.objects.all()
+        
+    template = "confotos.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
  
 @login_required  
 def cservicios(request):

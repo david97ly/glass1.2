@@ -24,3 +24,7 @@ class ContactosForm(ModelForm):
 class ServiciosForm(ModelForm):
     class Meta:
         model = Servicios
+        
+class FotosForm(ModelForm):
+    class Meta:
+        model = Fotos
