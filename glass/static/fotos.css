@@ -67,7 +67,8 @@ img{
   opacity:0.8;
 }
 .item:hover .button {
-
+  width: 70px;
+  height: 70px;
   margin: -96px auto 0 auto;
   background: url(http://immedesign.nl/cssdeck/next.png) center center no-repeat #0076ED;
   opacity: .7;
@@ -75,6 +76,7 @@ img{
   animation-delay: inherit;
   animation:scale .5s infinite;   
   cursor: pointer;
+  position: absolute;
 }
 .overlay {
   width: 100%;
