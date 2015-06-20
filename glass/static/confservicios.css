@@ -26,5 +26,6 @@
 }
 
 .sinfo{
-  height: 25px;
+  height: 50px;
+   overflow:hidden;
 }
