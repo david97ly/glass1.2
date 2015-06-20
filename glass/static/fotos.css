@@ -38,6 +38,7 @@ img{
 
 .nom{
   position: absolute;
+  margin-top: -20px;
 }
 
 #imgs:hover {
