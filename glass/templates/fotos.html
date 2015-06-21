@@ -95,12 +95,25 @@
    <script>
      
       $(document).on('ready',function(){
+        
+        var ocultar = {
+            'display': 'none'
+        }; 
+        
+        var mostrar = {
+          'display': 'block'
+          };
+        
+        
+        
       {% for s1 in fot %}
+      $('#hola{{s1.id}}').css(ocultar);
+      
       $("#cua{{ s1.id }}").on('click',mensaje{{s1.id}});
       
       
       function mensaje{{s1.id}}(){
-        alert("Hola mundo {{s1.nombre}}");
+       $('#hola{{s1.id}}').css(mostrar);
       }
        {% endfor %} 
       });
