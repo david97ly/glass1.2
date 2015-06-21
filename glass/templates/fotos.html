@@ -95,12 +95,15 @@
     <script src="/static/boot/js/bootstrap.js" type="text/javascript"></script>
    <script>
      
-     $( "#cua" ).click(function() {
-  alert( "Le a dado clik al cuaad" );
-});
-     
-     
-    
+      $(document).on('ready',function(){
+      
+      $("#.cua").on('click',mensaje);
+      
+      
+      function mensaje(params) {
+        alert("Hola mundo");
+      }
+      });
      
    </script>
   </body>
