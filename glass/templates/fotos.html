@@ -100,6 +100,18 @@
             'display': 'none'
         }; 
         
+        var toda{
+          'width': '100%',
+          'height': '100%';
+        }
+        
+         $("#cua11").on('click',mostrar);
+         
+           function mostrar(){
+            alert("si esta pasando");
+       $('#cua11').css(toda);
+      }
+        
     {% for s1 in fot %}
       $('.hola{{ s1.id }}').css(ocultar);
       
