@@ -9,7 +9,7 @@
 
 
 
-#image {
+.image {
 
 position: relative;
 
@@ -17,17 +17,22 @@ width: 100%; /* for IE 6 */
 
 }
 
-.cuadro{
-  position: absolute;
- width: 100%;
 
-  top: 200px;
+
+h2:hover {
+
+position: absolute;
+
+top: 200px;
 
 left: 0;
 
+width: 100%;
+
 }
 
-h3 span {
+
+h2 span:hover {
 
 color: white;
 
