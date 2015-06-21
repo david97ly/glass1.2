@@ -30,7 +30,7 @@ width: 100%;
 }
 
 
-h2 b {
+h2 {
 
 color: white;
 
@@ -45,19 +45,5 @@ padding: 10px;
  
 }
 
-h2 b:hover {
 
-color: white;
-
-font: bold 24px/45px Helvetica, Sans-Serif;
-
-letter-spacing: -1px;
-
-background: blueviolet;
-
-background: blueviolet;
-
-padding: 10px;
- 
-}
 
