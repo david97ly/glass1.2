@@ -72,7 +72,7 @@ class Servicios(models.Model):
 		return "%s " % (self.titulo)
 
 class ServiPrin(models.Model):
-	orden = models.ForeignKey(Orden)
+	orden = models.ForeignKey(Order)
 	servicio = models.ForeignKey(Servicios)
 	
 	
