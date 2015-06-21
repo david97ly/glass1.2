@@ -21,7 +21,7 @@ h2 {
 
 position: absolute;
 
-top: -200px;
+top: 200px;
 
 left: 0;
 
@@ -30,7 +30,7 @@ width: 100%;
 }
 
 
-h2 {
+h2 b {
 
 color: white;
 
@@ -44,6 +44,4 @@ opacity: 0.5;
 padding: 10px;
  
 }
-
-
 
