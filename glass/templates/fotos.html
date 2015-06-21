@@ -100,27 +100,21 @@
             'display': 'none'
         }; 
         
-        var mostrar = {
-          'display': 'block'
-          };
-        
-        
-        
-    
-      $('.hola1').css(ocultar);
+    {% for s1 in fot %}
+      $('.hola{{ s1.id }}').css(ocultar);
       
-      $("#cua1").mouseenter(mensaje1);
-     $("#cua1").mouseleave(mensaje11);
+      $("#cua{{ s1.id }}").mouseenter(mensaje{{s1.id}});
+     $("#cua{{s1.id}}").mouseleave(mensaje{{s1.id}}{{s1.id}});
         
       
-      function mensaje1(){
-        $( '.hola1').fadeIn(500);
+      function mensaje{{s1.id}}(){
+        $( '.hola{{s1.id}}').fadeIn(500);
       }
       
-      function mensaje11(){
-        $( '.hola1').fadeOut(100);
+      function mensaje{{s1.id}}{{s1.id}}(){
+        $( '.hola{{s1.id}}').fadeOut(100);
       }
-     
+     {% endfor %} 
     
       });
      
