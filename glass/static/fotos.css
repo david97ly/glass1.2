@@ -21,7 +21,7 @@ h2 {
 
 position: absolute;
 
-top: 200px;
+top: 250px;
 
 left: 0;
 
@@ -31,8 +31,7 @@ left: 0;
 
 
 h2 b {
-  width: 100%;
-
+ 
 color: white;
 
 font: bold 24px/45px Helvetica, Sans-Serif;
