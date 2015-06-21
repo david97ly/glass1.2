@@ -74,7 +74,7 @@
   
       <!-- Indicators -->
    
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
+       <div id="cua{{s.id}}" class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
          <div class="image" >
            <img  id="imgs"  class="img-responsive" src="{{ s.ruta.url }}" alt="...">
            <div class="hola{{s.id}}">
@@ -95,13 +95,14 @@
    <script>
      
       $(document).on('ready',function(){
+      {% for s1 in fot %}
+      $("#cua{{ s1.id }}").on('click',mensaje{{s1.id}});
       
-      $("#cua").on('click',mensaje);
       
-      
-      function mensaje(){
-        alert("Hola mundo");
+      function mensaje{{s1}}(){
+        alert("Hola mundo {{s1.nombre}}");
       }
+       {% endfor %} 
       });
      
    </script>
