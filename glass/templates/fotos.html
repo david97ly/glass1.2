@@ -96,12 +96,30 @@
      
       $(document).on('ready',function(){
         
-        $("#cua1").mouseout(function() {
-          $(".hola1").fadeOut(100);
-        });
-        .mouseover(function() {
-           $(".hola1").fadeIn(200); 
-        });
+        var ocultar = {
+            'display': 'none'
+        }; 
+        
+        var mostrar = {
+          'display': 'block'
+          };
+        
+        
+        
+    
+      $('.hola1').css(ocultar);
+      
+      $("#cua1").hover(mensaje1);
+     $("#cua1").mouseout(mensaje11);
+        
+      
+      function mensaje1(){
+        $( '.hola1').css(mostrar );
+      }
+      
+      function mensaje11(){
+        $( '.hola1').css(ocultar);
+      }
      
     
       });
