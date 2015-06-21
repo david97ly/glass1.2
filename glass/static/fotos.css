@@ -30,7 +30,7 @@ width: 100%;
 }
 
 
-h2 span {
+h2 b {
 
 color: white;
 
@@ -46,7 +46,7 @@ padding: 10px;
  
 }
 
-h2 span:hover {
+h2 b:hover {
 
 color: white;
 
@@ -62,9 +62,3 @@ padding: 10px;
  
 }
 
-
-h2 span.spacer {
-
-padding:0 5px;
-
-}
