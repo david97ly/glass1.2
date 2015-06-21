@@ -93,17 +93,23 @@
     <script src="/static/js/ajax.js"></script>
     <script src="/static/boot/js/bootstrap.js" type="text/javascript"></script>
    <script>
-     $(document).on('ready',function(){
-        
-        $('#tancho').on('click',mostrarform);
-      
-       
-          
-         function mostrarform(){
-               alert("hola tancho");
-              }; 
-       ; 
-      })
+     
+     
+$(function() {
+
+$("h2")
+
+.wrapInner("<span>")
+
+$("h2 br")
+
+.before("<span class='spacer'>")
+
+.after("<span class='spacer'>");
+
+});
+
+    
      
    </script>
   </body>
