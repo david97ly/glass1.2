@@ -23,16 +23,13 @@
    height: 350px;
 }
 img{
-  cursor: h
+  cursor: pointer;
 }
 .sinfo{
   height: 100px;
    overflow:auto;
 }
 
-img{
-  cursor: pointer;
-}
 
 .nom{
   position: absolute;
