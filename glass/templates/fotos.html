@@ -75,7 +75,7 @@
   
       <!-- Indicators -->
    
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
+       <div id="cua" class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
          <div class="image" >
            <img  id="imgs"  class="img-responsive" src="{{ s.ruta.url }}" alt="...">
            <div class="hola{{s.id}}">
@@ -95,14 +95,12 @@
     <script src="/static/boot/js/bootstrap.js" type="text/javascript"></script>
    <script>
      
-      $(document).on('ready',function(){
-         {% for s1 in fot %}
-        $( "#hola{{s1.id}}" ).click(function() {
-  alert( "{{ s1.id  }}" );
+     $( "#cua" ).click(function() {
+  alert( "Le a dado clik al cuaad" );
 });
-  {% endfor %} 
-      
-      })
+     
+     
+    
      
    </script>
   </body>
