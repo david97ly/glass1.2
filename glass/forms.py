@@ -28,3 +28,7 @@ class ServiciosForm(ModelForm):
 class FotosForm(ModelForm):
     class Meta:
         model = Fotos
+
+class ServiPrinForm(ModelForm):
+    class Meta:
+        model =ServiPrin

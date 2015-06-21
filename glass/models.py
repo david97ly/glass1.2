@@ -71,4 +71,8 @@ class Servicios(models.Model):
 	def __unicode__(self):
 		return "%s " % (self.titulo)
 
+class ServiPrin(models.Model):
+	orden = models.ForeignKey(Orden)
+	servicio = models.ForeignKey(Servicios)
+	
 	
