@@ -59,10 +59,10 @@ img{
   border-radius: 2px;
   background: #EBEBEB;
   transition: all 1s ease;
-}
+}/*
 .item img {
   width: 100%;
-}
+}*/
 .item:hover .overlay {
   background: #FFF;
   opacity:0.8;
