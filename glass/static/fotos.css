@@ -1,21 +1,4 @@
-#formu{
-  display: none;
-}
 
-#cance{
-  display: none;
-}
-
-
- 
-
-
-       .bien{
-        background: #90caf9;
-        margin-left: -20px;
-        margin-top: -20px;
-        margin-right: -15px;
-       }
 
 
 #imgs{
@@ -25,26 +8,6 @@
 img{
   cursor: pointer;
 }
-.sinfo{
-  height: 100px;
-   overflow:auto;
-}
-
-
-.nom{
-  position: absolute;
-  margin-top: -20px;
-}
-
-
-.nom{
-  position: absolute;
-  background: black;
-  width: 100%;
-  height: 100px;
-}
-
-
 
 
 .item {
