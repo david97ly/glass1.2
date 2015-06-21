@@ -75,15 +75,15 @@
   
       <!-- Indicators -->
    
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
-         <div class="image" >
-           <img  id="imgs"  class="img-responsive" src="{{ s.ruta.url }}" alt="...">
-           
-            <!-- <h2><span>{{ s.nombre }}<span></h2>  -->
-            <div class="cuadro">hola</div>
-             </div>
+        <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 cuadro">
+         <div id="image" class="thumbnail">
+           <img  id="imgs"  class="img-responsive img-service" src="{{ s.ruta.url }}" alt="...">
+           <div class="caption cuadro">
+             <h3>{{ s.nombre }}</h3>          
+             
+           </div>
+         </div>
        </div>
-   <br>
       
       {% endfor %} 
     </div><!-- /.carousel -->
