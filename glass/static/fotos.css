@@ -17,7 +17,7 @@ width: 100%; /* for IE 6 */
 
 }
 
-h2 {
+h2:hover {
 
 position: absolute;
 
@@ -30,7 +30,7 @@ width: 100%;
 }
 
 
-h2 span {
+h2 span:hover {
 
 color: white;
 
