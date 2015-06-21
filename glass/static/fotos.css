@@ -8,9 +8,23 @@
 }
 
 
-.conte{
-  position: relative;
-  width:350px;
-   height: 350px;
-   background: black;
+
+.image {
+
+position: relative;
+
+width: 100%; /* for IE 6 */
+
+}
+
+h2 {
+
+position: absolute;
+
+top: 200px;
+
+left: 0;
+
+width: 100%;
+
 }
