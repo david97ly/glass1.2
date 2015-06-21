@@ -17,19 +17,14 @@ width: 100%; /* for IE 6 */
 
 }
 
-h2 {
 
+
+h2 {
 position: absolute;
  width:350px;
  height: 350px;
 
 left: 0;
-
-}
-
-
-h2 {
-
 color: white;
 
 font: bold 24px/45px Helvetica, Sans-Serif;
