@@ -61,7 +61,7 @@
       
         <div id="formu">
              
-             <form action="{% url "eliminarservicio" servi.id %}" class="navbar-form navbar-left" role="form" method="post" enctype="multipart/form-data"> 
+             <form action="{% url "eliminarserivicio" servi.id %}" class="navbar-form navbar-left" role="form" method="post" enctype="multipart/form-data"> 
              <h3> Desea elilminar el servicio "{{ servi.nombre }}"</h3>
                {% csrf_token %}
                 
