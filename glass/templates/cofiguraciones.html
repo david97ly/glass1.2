@@ -99,7 +99,7 @@
           <div class="container">
             
             <div class="orden">
-           <p><a class="btn btn-large btn-primary " id="{{s.id}}" href="{{ url "slideupdate" s.id }}" >Editar</a></p>
+           <p><a class="btn btn-large btn-primary " id="{{s.id}}" href="{% url "slideupdate" s.id %}" >Editar</a></p>
            <p><a class="btn btn-large btn-primary " id="{{s.id}}" href="/elimsl/{{s.id}}" >Eliminar</a></p>
               <h1>{{ s.mensaje }}</h1>
               <p>{{ s.submensaje }}</p>
