@@ -64,9 +64,6 @@
              <form action="{% url "eliminarslide" slide.id %}" class="navbar-form navbar-left" role="form" method="post" enctype="multipart/form-data"> 
              <h3> Desea elilminar el Slide "{{ slide.mensaje }}"</h3>
                {% csrf_token %}
-                
-             
-                
               <div class="form-group">
               <p>  <input type="submit" id="guarda" value="Si" class="btn btn-large btn-primary" placeholder="Search">
                 <a href="{% url "conf"  %}" class="btn btn-primary" role="button">No</a></p>
@@ -77,9 +74,9 @@
            
                       
       </div>
-      
+      <br>
+      <br>
          
-                 <div id="myCarousel" class="carousel slide ">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -105,7 +102,6 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
-      </div><!-- /.carousel -->
       
       
       
