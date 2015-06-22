@@ -63,7 +63,7 @@
       
              <form action="{% url "slideupdate" slide.id %}" class="navbar-form navbar-left" role="form" method="post" enctype="multipart/form-data"> 
                {% csrf_token %}
-                 {{form.as_p}}
+                 {{formslide.as_p}}
               <div class="form-group">
                 <input type="submit" id="guarda" value="Guardar" class="form-control" placeholder="Search">
                 <input type="button" id="cance" value="Cancelar" class="btn btn-large btn-primary " >
