@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Order(models.Model):
-    orden = models.CharField(max_length = 10)
+    orden = models.CharField(max_length = 10,null = True)
 
     def __unicode__(self):
         return "%s " % (self.orden)
