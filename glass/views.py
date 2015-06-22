@@ -185,12 +185,12 @@ def eliminarslide(request, idslide):
 def editarfoto(request, idfoto):
     foto = get_object_or_404(Fotos, pk=idfoto)
     if request.POST:
-        formfoto = FotosForm(request.POST, request.FILES, instance=slide)
+        formfoto = FotosForm(request.POST, request.FILES, instance=foto)
         if formfoto.is_valid():
             formfoto.save()
             return HttpResponseRedirect("/cfotos")
     else:
-        formfoto = FotosForm(instance=slide)
+        formfoto = FotosForm(instance=foto)
         
     template = "editarfoto.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
@@ -209,12 +209,12 @@ def eliminarfoto(request, idfoto):
 def editarservicio(request, idservi):
     servi = get_object_or_404(Servicios, pk=idservi)
     if request.POST:
-        formservi = ServiciosForm(request.POST, request.FILES, instance=slide)
+        formservi = ServiciosForm(request.POST, request.FILES, instance=servi)
         if formservi.is_valid():
             formservi.save()
             return HttpResponseRedirect("/cserivicios")
     else:
-        formservi = FotosForm(instance=slide)
+        formservi = FotosForm(instance=servi)
         
     template = "editarservicio.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
@@ -233,12 +233,12 @@ def eliminarserivicio(request, idservi):
 def editarbanner(request, idbaner):
     ban = get_object_or_404(Mensajeb, pk=idbaner)
     if request.POST:
-        formba = MensajebServiciosForm(request.POST, request.FILES, instance=slide)
+        formba = MensajebServiciosForm(request.POST, request.FILES, instance=ban)
         if formba.is_valid():
             formba.save()
             return HttpResponseRedirect("/banner")
     else:
-        formba = FotosForm(instance=slide)
+        formba = FotosForm(instance=ban)
         
     template = "editarbanner.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
