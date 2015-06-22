@@ -24,6 +24,10 @@ urlpatterns = patterns('',
     url(r'^ccontacto', 'glass.views.ccontacto', name='ccontacto'),
     url(r'^slideupdate/(\d+)$', 'glass.views.slideupdate', name='slideupdate'),
     url(r'^eliminarslide/(\d+)$', 'glass.views.eliminarslide', name='eliminarslide'),
+    url(r'^eliminarfoto/(\d+)$', 'glass.views.eliminarfoto', name='eliminarfoto'),
+    url(r'^editarfoto/(\d+)$', 'glass.views.editarfoto', name='editarfoto'),4
+    url(r'^eliminarserivicio/(\d+)$', 'glass.views.eliminarserivicio', name='eliminarserivicio'),
+    url(r'^editarservicio/(\d+)$', 'glass.views.editarservicio', name='editarservicio'),
 
   #  url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root':'/home/'}),
     

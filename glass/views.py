@@ -182,3 +182,48 @@ def eliminarslide(request, idslide):
     template = "eliminarslide.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
             
+def editarfoto(request, idfoto):
+    foto = get_object_or_404(Fotos, pk=idfoto)
+    if request.POST:
+        formfoto = FotosForm(request.POST, request.FILES, instance=slide)
+        if formfoto.is_valid():
+            formfoto.save()
+            return HttpResponseRedirect("/cfotos")
+    else:
+        formfoto = FotosForm(instance=slide)
+        
+    template = "editarfoto.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+   
+def eliminarfoto(request, idfoto):
+    foto = get_object_or_404(Fotos,pk=idfoto)
+    if request.POST:
+        foto.delete()
+        return HttpResponseRedirect("/cfotos")
+        
+    template = "eliminarfoto.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+    
+    
+    
+def editarservicio(request, idservi):
+    servi = get_object_or_404(Servicios, pk=idservi)
+    if request.POST:
+        formservi = ServiciosForm(request.POST, request.FILES, instance=slide)
+        if formservi.is_valid():
+            formservi.save()
+            return HttpResponseRedirect("/cserivicios")
+    else:
+        formservi = FotosForm(instance=slide)
+        
+    template = "editarservicio.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+   
+def eliminarserivicio(request, idservi):
+    servi = get_object_or_404(Servicios,pk=idservi)
+    if request.POST:
+        servi.delete()
+        return HttpResponseRedirect("/cservicios")
+        
+    template = "eliminarfoto.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
