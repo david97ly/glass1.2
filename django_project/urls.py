@@ -25,7 +25,7 @@ urlpatterns = patterns('',
     url(r'^slideupdate/(\d+)$', 'glass.views.slideupdate', name='slideupdate'),
     url(r'^eliminarslide/(\d+)$', 'glass.views.eliminarslide', name='eliminarslide'),
     url(r'^eliminarfoto/(\d+)$', 'glass.views.eliminarfoto', name='eliminarfoto'),
-    url(r'^editarfoto/(\d+)$', 'glass.views.editarfoto', name='editarfoto'),4
+    url(r'^editarfoto/(\d+)$', 'glass.views.editarfoto', name='editarfoto'),
     url(r'^eliminarserivicio/(\d+)$', 'glass.views.eliminarserivicio', name='eliminarserivicio'),
     url(r'^editarservicio/(\d+)$', 'glass.views.editarservicio', name='editarservicio'),
 
