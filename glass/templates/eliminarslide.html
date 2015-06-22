@@ -65,6 +65,35 @@
              <h3> Desea elilminar el Slide "{{ slide.mensaje }}"</h3>
                {% csrf_token %}
                 
+                
+                 <div id="myCarousel" class="carousel slide ">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      
+      </ol>
+      <div class="carousel-inner">
+          
+        <div class="item active">
+          <div class="container">
+            
+            <div class="orden">
+          
+              <h1>{{ slide.mensaje }}</h1>
+              <p>{{ slide.submensaje }}</p>
+          
+            </div>
+          </div>
+          <div class="item">
+          <img class="imgs" id="{{s.id}}" src="{{ slide.foto.url }}" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          </div>
+        </div>
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+      </div><!-- /.carousel -->
+                
               <div class="form-group">
               <p>  <input type="submit" id="guarda" value="Si" class="btn btn-large btn-primary" placeholder="Search">
                 <a href="{% url "conf"  %}" class="btn btn-primary" role="button">No</a></p>
