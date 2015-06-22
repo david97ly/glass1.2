@@ -225,7 +225,7 @@ def eliminarserivicio(request, idservi):
         servi.delete()
         return HttpResponseRedirect("/cservicios")
         
-    template = "eliminarfoto.html"
+    template = "eliminarservicio.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
     
     
