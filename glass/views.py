@@ -214,7 +214,7 @@ def editarservicio(request, idservi):
             formservi.save()
             return HttpResponseRedirect("/cserivicios")
     else:
-        formservi = FotosForm(instance=servi)
+        formservi = ServiciosForm(instance=servi)
         
     template = "editarservicio.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
