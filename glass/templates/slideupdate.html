@@ -65,8 +65,8 @@
                {% csrf_token %}
                  {{formslide.as_p}}
               <div class="form-group">
-                <input type="submit" id="guarda" value="Guardar" class="form-control" placeholder="Search">
-               <a href="{% url "conf"  %}" type="button" id="cance" value="Cancelar" class="btn btn-large btn-primary " >
+              <p>  <input type="submit" id="guarda" value="Guardar" class="form-control" placeholder="Search">
+              <a href="{% url "conf"  %}" class="btn btn-primary" role="button">Cancelar</a></p>
               </div>
              
                </form>
