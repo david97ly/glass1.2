@@ -233,12 +233,12 @@ def eliminarserivicio(request, idservi):
 def editarbanner(request, idbaner):
     ban = get_object_or_404(Mensajeb, pk=idbaner)
     if request.POST:
-        formba = MensajebServiciosForm(request.POST, request.FILES, instance=ban)
+        formba = MensajebForm(request.POST, request.FILES, instance=ban)
         if formba.is_valid():
             formba.save()
             return HttpResponseRedirect("/banner")
     else:
-        formba = FotosForm(instance=ban)
+        formba = MensajebForm(instance=ban)
         
     template = "editarbanner.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
