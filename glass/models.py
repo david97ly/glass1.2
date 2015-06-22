@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Order(models.Model):
-    orden = models.CharField(max_length = 10, null = True,default="Primero")
+    orden = models.CharField(max_length = 10)
 
     def __unicode__(self):
         return "%s " % (self.orden)
@@ -66,7 +66,6 @@ class Servicios(models.Model):
 	titulo = models.CharField(max_length=500)
 	informacion = models.TextField(max_length=20000,null=True)
 	valida = models.BooleanField(default=False)
-	orden = models.ForeignKey(Order) 
 	foto = models.ImageField(upload_to='photos')
 
 	def __unicode__(self):
