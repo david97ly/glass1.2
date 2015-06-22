@@ -95,9 +95,7 @@
            <img  id="imgs"  class="img-responsive img-service" src="{{ s.ruta.url }}" alt="...">
            <div class="caption">
              <h3>{{ s.nombre }}</h3>          
-                {% if s.valida %}
             <p><a href="{% url "editarfoto" s.id %}" class="btn btn-primary" role="button">Editar &raquo;</a>
-            
              <a href="{% url "eliminarfoto" s.id %}" class="btn btn-primary" role="button">Elimiminar &raquo;</a></p>
            </div>
          </div>
