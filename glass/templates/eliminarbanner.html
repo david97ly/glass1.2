@@ -61,8 +61,8 @@
       
         <div id="formu">
              
-             <form action="{% url "eliminarservicio" servi.id %}" class="navbar-form navbar-left" role="form" method="post" enctype="multipart/form-data"> 
-             <h3> Desea elilminar el servicio "{{ servi.nombre }}"</h3>
+             <form action="{% url "eliminarbanner" ban.id %}" class="navbar-form navbar-left" role="form" method="post" enctype="multipart/form-data"> 
+             <h3> Desea elilminar el banner "{{ ban.mensaje }}"</h3>
                {% csrf_token %}
                 
               <div class="form-group">
@@ -99,15 +99,21 @@
   
       <!-- Indicators -->
    
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 ">
-         <div class="thumbnail">
-           <img  id="imgs" class="img-responsive img-service" src="{{ servi.foto.url }}" alt="...">
-           <div class="caption">
-             <h3>{{ servi.titulo }}</h3>
-             <p>{{ servi.informacion }}</p>
-           </div>
-         </div>
-       </div>
+      <div id="myCarousel" class="carousel slide ">
+      <!-- Indicators -->
+           <div class="col-xs-12 col-sm-12 col-md-12 ">
+     <div class="jumbotron bien cuadro">
+  <div class="container ">
+    <h1>{{ ban.mensaje }}</h1>
+    <p>{{ ban.submensaje }}</p>
+     <!-- <img src="/static/imagenes/banner/principal.jpg" class="img-responsive img-rounded "  id="imgb" alt="First slide"> -->
+
+    <p><a class="btn btn-primary btn-lg">Detalle</a></p>
+	
+  </div>
+</div>
+     </div>
+      </div><!-- /.carousel -->
    
   
     </div><!-- /.carousel -->

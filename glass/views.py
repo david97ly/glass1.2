@@ -227,3 +227,27 @@ def eliminarserivicio(request, idservi):
         
     template = "eliminarfoto.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
+    
+    
+    
+def editarbanner(request, idbaner):
+    ban = get_object_or_404(Mensajeb, pk=idbaner)
+    if request.POST:
+        formba = MensajebServiciosForm(request.POST, request.FILES, instance=slide)
+        if formba.is_valid():
+            formba.save()
+            return HttpResponseRedirect("/banner")
+    else:
+        formba = FotosForm(instance=slide)
+        
+    template = "editarbanner.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+   
+def eliminarbanner(request, idbaner):
+    ban = get_object_or_404(Mensajeb,pk=idbaner)
+    if request.POST:
+        ban.delete()
+        return HttpResponseRedirect("/banner")
+        
+    template = "eliminarbanner.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))

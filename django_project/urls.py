@@ -28,6 +28,8 @@ urlpatterns = patterns('',
     url(r'^editarfoto/(\d+)$', 'glass.views.editarfoto', name='editarfoto'),
     url(r'^eliminarserivicio/(\d+)$', 'glass.views.eliminarserivicio', name='eliminarserivicio'),
     url(r'^editarservicio/(\d+)$', 'glass.views.editarservicio', name='editarservicio'),
+    url(r'^eliminarbanner/(\d+)$', 'glass.views.eliminarbanner', name='eliminarbanner'),
+    url(r'^editarbanner/(\d+)$', 'glass.views.editarbanner', name='editarbanner'),
 
   #  url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root':'/home/'}),
     
