@@ -168,7 +168,7 @@ def slideupdate(request, idslide):
             formslide.save()
             return HttpResponseRedirect("conf")
     else:
-        slideform = SlideForm(instance=slide)
+        formslide = SlideForm(instance=slide)
         
     template = "slideupdate.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
