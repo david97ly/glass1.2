@@ -212,7 +212,7 @@ def editarservicio(request, idservi):
         formservi = ServiciosForm(request.POST, request.FILES, instance=servi)
         if formservi.is_valid():
             formservi.save()
-            return HttpResponseRedirect("/cserivicios")
+            return HttpResponseRedirect("/cservicios")
     else:
         formservi = ServiciosForm(instance=servi)
         
