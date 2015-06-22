@@ -166,7 +166,7 @@ def slideupdate(request, idslide):
         formslide = SlideForm(request.POST, request.FILES, instance=slide)
         if formslide.is_valid():
             formslide.save()
-            return HttpResponseRedirect("conf")
+            return HttpResponseRedirect("/conf")
     else:
         formslide = SlideForm(instance=slide)
         
