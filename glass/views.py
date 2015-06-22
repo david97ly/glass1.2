@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404 
 from django.template.loader import get_template
 from django.template import Context
 from django.template.context import RequestContext
@@ -156,3 +156,19 @@ def ccontacto(request):
     titulo = "Login"
     c = {'titulo': titulo}
     return render_to_response('login.html',c)
+    
+    
+    
+    
+def slideupdate(request, idslide):
+    slide = get_object_or_404(Slide, pk=idslide)
+    if request.POST:
+        formslide = SlideForm(request.POST, request.FILES, instance=slide)
+        if formslide.is_valid():
+            formslide.save()
+            return HttpResponseRedirect("conf")
+    else:
+        slideform = SlideForm(instance=slide)
+        
+    template = "slideupdate.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
