@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^info', 'glass.views.info', name='info'),
     url(r'^ccontacto', 'glass.views.ccontacto', name='ccontacto'),
     url(r'^slideupdate/(\d+)$', 'glass.views.slideupdate', name='slideupdate'),
+    url(r'^eliminarslide/(\d+)$', 'glass.views.eliminarslide', name='eliminarslide'),
 
   #  url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root':'/home/'}),
     

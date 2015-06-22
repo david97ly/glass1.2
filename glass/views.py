@@ -172,3 +172,13 @@ def slideupdate(request, idslide):
         
     template = "slideupdate.html"
     return render_to_response(template,context_instance=RequestContext(request,locals()))
+   
+def eliminarslide(request, idslide):
+    slide = get_object_or_404(Slide,pk=idslide)
+    if request.POST:
+        slide.delete()
+        return HttpResponseRedirect("/conf")
+        
+    template = "eliminarslide.html"
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+            
