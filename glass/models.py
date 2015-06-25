@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce import models as tinymcy_models
 
 # Create your models here.
 class Order(models.Model):
@@ -64,7 +65,7 @@ class Contactos(models.Model):
 	
 class Servicios(models.Model):
 	titulo = models.CharField(max_length=500)
-	informacion = models.TextField(max_length=20000,null=True)
+	informacion = tinymce_models.HTMLField()
 	valida = models.BooleanField(default=False)
 	foto = models.ImageField(upload_to='photos')
 

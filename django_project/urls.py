@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^tinymce/', include('tinymce.urls')),
     url(r'^servicios', 'glass.views.servicios', name='servicios'),
     url(r'^detalleservice', 'glass.views.detalleservice', name='detalleservice'),
     url(r'^contacto', 'glass.views.contacto', name='contacto'),
@@ -30,6 +31,7 @@ urlpatterns = patterns('',
     url(r'^editarservicio/(\d+)$', 'glass.views.editarservicio', name='editarservicio'),
     url(r'^eliminarbanner/(\d+)$', 'glass.views.eliminarbanner', name='eliminarbanner'),
     url(r'^editarbanner/(\d+)$', 'glass.views.editarbanner', name='editarbanner'),
+     
 
   #  url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root':'/home/'}),
     
