@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'south',
     'glass',
     'tinymce',
 )
@@ -55,7 +54,11 @@ ROOT_URLCONF = 'django_project.urls'
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
+TINYMCE_DEFAULT_CONFIG = {
+   
+    'theme': "advanced",
 
+} 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
