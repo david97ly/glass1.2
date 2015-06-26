@@ -1,5 +1,6 @@
 from django.db import models
 from tinymce import models as tinymce_models
+from tinymce.models import HTMLField
 
 # Create your models here.
 class Order(models.Model):
@@ -65,7 +66,7 @@ class Contactos(models.Model):
 	
 class Servicios(models.Model):
 	titulo = models.CharField(max_length=500)
-	informacion = tinymce_models.HTMLField()
+	informacion = HTMLField()
 	valida = models.BooleanField(default=False)
 	foto = models.ImageField(upload_to='photos')
 
