@@ -46,9 +46,9 @@ def servicios(request):
 
 
 def detalleservice(request):
-    titulo = "Detalle de los servicios"
+    titulo = "Auto Glass Repair"
     c = {'titulo': titulo}
-    return render_to_response('detalleservices.html',c)
+    return render_to_response('servi1.html',c)
 
 
 def contacto(request):
