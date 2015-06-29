@@ -62,7 +62,7 @@ def detalleservice(request, idser):
     elif idser == 6:
         template = 'servi6.html'
     else:
-        template = 'servi1.html'
+        template = 'servi6.html'
         
     return render_to_response(template,c)
 
