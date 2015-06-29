@@ -49,20 +49,20 @@ def detalleservice(request, idser):
     titulo = "Auto Glass Repair"
     c = {'titulo': titulo}
     template = ""
-    if idser == 1:
+    if idser == '1':
         template = 'servi1.html'
-    elif idser == 2:
+    elif idser == '2':
         template = 'servi2.html'
-    elif idser == 3:
+    elif idser == '3':
         template = 'servi3.html'
-    elif idser == 4:
+    elif idser == '4':
         template = 'servi4.html'
-    elif idser == 5:
+    elif idser == '5':
         template = 'servi5.html'
-    elif idser == 6:
+    elif idser == '6':
         template = 'servi6.html'
     else:
-        template = 'servi6.html'
+        template = 'servi2.html'
         
     return render_to_response(template,c)
 
