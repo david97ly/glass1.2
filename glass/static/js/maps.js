@@ -1,3 +1,4 @@
+
 $(function() {
 	if(navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(getCoords,getError);
@@ -26,6 +27,12 @@ $(function() {
 		}
 		
 		map = new google.maps.Map($('#mapa').get(0), mapSettings);
+		var marker = new google.maps.Marker({
+			position: latlng,
+			map: map,
+			draggable:true,
+			title: 'Arrastrar'
+		});
 	}
 	
 });
