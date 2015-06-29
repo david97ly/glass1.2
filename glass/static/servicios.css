@@ -95,7 +95,7 @@ background: #ff511e;
  
  
  #mapa{
-   height: 450px;
-   width: 430px;
+   height: 100%;
+   width: 100%;
    background: cadetblue;
  }
