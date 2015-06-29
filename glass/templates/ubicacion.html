@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{% static "servicios.css" %}">
     <link rel="shortcut icon" type="image/x-icon" href="../static/imagenes/icono/credit-cards.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-     <script src="https://maps.googleapis.com/maps/api/js?sensor=true">
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC77Se0ay0lUjPVp-k6YP-APAMp9M03F7o&sensor=true">
     </script>
     <script type="text/javascript">
       function initialize() {
@@ -17,7 +17,6 @@
           center: { lat:40.8138223, lng: -73.8984303},
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
-          
         };
         var map = new google.maps.Map(document.getElementById('mapa'),
             mapOptions);
