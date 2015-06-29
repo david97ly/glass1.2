@@ -45,10 +45,26 @@ def servicios(request):
     return render_to_response('servicios.html',c)
 
 
-def detalleservice(request):
+def detalleservice(request, idser):
     titulo = "Auto Glass Repair"
     c = {'titulo': titulo}
-    return render_to_response('servi1.html',c)
+    template = ""
+    if idser == 1:
+        template = 'servi1.html'
+    elif idser == 2:
+        template = 'servi2.html'
+    elif idser == 3:
+        template = 'servi3.html'
+    elif idser == 4:
+        template = 'servi4.html'
+    elif idser == 5:
+        template = 'servi5.html'
+    elif idser == 6:
+        template = 'servi6.html'
+    else:
+        template = 'servi1.html'
+        
+    return render_to_response(template,c)
 
 
 def contacto(request):
