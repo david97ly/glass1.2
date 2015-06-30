@@ -66,3 +66,11 @@
    text-decoration: none;
    color: black;
  }
+ 
+  .titu{
+
+    background-color: #0288d1;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: -20px;
+ }
