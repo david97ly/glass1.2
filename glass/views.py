@@ -96,8 +96,9 @@ def quienes(request):
 
 def ubicacion(request):
     titulo = "Nuestra Ubicacion"
-    c = {'titulo': titulo}
-    return render_to_response('ubicacion.html',c)
+    template = 'ubicacion.html'
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
+
     
 def login(request):
     titulo = "Login"
