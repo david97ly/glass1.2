@@ -131,6 +131,10 @@
 
       }
 
+ ul>li a{
+              font-size: 20px;
+            }
+
       #myCarousel{
         box-shadow: -3px -5px 5px 10px black;
       }
