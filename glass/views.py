@@ -41,8 +41,8 @@ def home(request):
 
 def servicios(request):
     titulo = "SERVICIOS"
-    c = {'titulo':titulo}
-    return render_to_response('servicios.html',c)
+    template = 'servicios.html'
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
 
 
 def detalleservice(request, idser):
@@ -69,8 +69,8 @@ def detalleservice(request, idser):
 
 def contacto(request):
     titulo = "Contactenos"
-    c = {'titulo': titulo}
-    return render_to_response('contacto.html',c)
+    template = 'contacto.html'
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
     
     
 def fotos(request):
