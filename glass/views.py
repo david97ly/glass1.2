@@ -45,12 +45,18 @@ def home(request):
 
 
 def servicios(request):
+    visi = Visitas.objects.get(id='2')
+    
+    visi.servi = visi.servi + 1
+    visi.save()
+    
     titulo = "SERVICIOS"
     template = 'servicios.html'
     return render_to_response(template,context_instance=RequestContext(request,locals()))
 
 
 def detalleservice(request, idser):
+    
     titulo = "Auto Glass Repair"
     c = {'titulo': titulo}
     template = ""
@@ -73,12 +79,22 @@ def detalleservice(request, idser):
 
 
 def contacto(request):
+    visi = Visitas.objects.get(id='2')
+    
+    visi.contacto = visi.contacto + 1
+    visi.save()
+    
     titulo = "Contactenos"
     template = 'contacto.html'
     return render_to_response(template,context_instance=RequestContext(request,locals()))
     
     
 def fotos(request):
+    visi = Visitas.objects.get(id='2')
+    
+    visi.fotos = visi.fotos + 1
+    visi.save()
+    
     titulo = "Galeria de fots"
     template = "fotos.html"
     fota = Fotos.objects.all()
@@ -100,6 +116,11 @@ def quienes(request):
 
 
 def ubicacion(request):
+    visi = Visitas.objects.get(id='2')
+    
+    visi.mapa = visi.mapa + 1
+    visi.save()
+    
     titulo = "Nuestra Ubicacion"
     template = 'ubicacion.html'
     return render_to_response(template,context_instance=RequestContext(request,locals()))
