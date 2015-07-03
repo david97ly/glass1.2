@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     visi = Visitas.objects.get(id='2')
     
-    visi.home = vi.home + 1
+    visi.home = visi.home + 1
     visi.save()
     
     titulo = "Master AutoGlass"
