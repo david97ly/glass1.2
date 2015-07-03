@@ -89,5 +89,5 @@ class Visitas(models.Model):
 	
 	
 	def __unicode__(self):
-		return "%i - %i - %i - %i -%i" % (self.home, self.servi,self.fotos,self.contacto.self.mapa)
+		return "%i - %i - %i - %i -%i" % (self.home, self.servi,self.fotos,self.contacto,self.mapa)
 	
