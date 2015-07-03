@@ -79,5 +79,15 @@ class ServiPrin(models.Model):
 	
 	def __unicode__(self):
 		return "%s - %s" % (self.servicio.titulo,self.orden.orden)
+
+class Visitas(models.Model):
+	home = models.IntegerField(default=0)
+	servi= models.IntegerField(default=0)
+	fotos = models.IntegerField(default=0)
+	contacto= models.IntegerField(default=0)
+	mapa = models.IntegerField(default=0)
 	
+	
+	def __unicode__(self):
+		return "%i - %i - %i - %i -%i" % (self.home, self.servi,self.fotos,self.contacto.self.mapa)
 	
