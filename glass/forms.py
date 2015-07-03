@@ -32,3 +32,7 @@ class FotosForm(ModelForm):
 class ServiPrinForm(ModelForm):
     class Meta:
         model =ServiPrin
+        
+class VisitasForm(ModelForm):
+    class Meta:
+        model =ServiPrin
