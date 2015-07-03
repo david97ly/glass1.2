@@ -9,7 +9,7 @@ from forms import *
 from django.contrib.auth.decorators import login_required
 
 def home(request):
-    visi = Visitas.objects.get(id='1')
+    visi = Visitas.objects.get(id='2')
     
     visi.home = vi.home + 1
     visi.save()
