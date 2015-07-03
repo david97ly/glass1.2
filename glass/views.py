@@ -9,6 +9,11 @@ from forms import *
 from django.contrib.auth.decorators import login_required
 
 def home(request):
+    visi = Visitas.objects.get(id=1)
+    
+    visi.home = vi.home + 1
+    visi.save()
+    
     titulo = "Master AutoGlass"
     template = "home.html"
     slider = Slide.objects.all()
