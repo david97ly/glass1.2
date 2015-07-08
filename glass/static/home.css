@@ -1,4 +1,12 @@
 
+.app-header{
+	background: url("../static/imagenes/banner/principal.jpg") no-repeat center top fixed;
+	font-family: "Avenir", Futura, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 80px;
+}
+
 .marketing{
         margin-top: 20px;
       }
