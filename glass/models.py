@@ -16,7 +16,7 @@ class Fotos(models.Model):
 	valida = models.BooleanField(default=False)
 
 	def __unicode__(self):
-		return self.nombre
+		return self.Snombre
 
 
 class Slide(models.Model):

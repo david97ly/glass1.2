@@ -62,26 +62,27 @@ def servicios(request):
 
 
 def detalleservice(request, idser):
+    servicio = get_object_or_404(Servicios, pk=idser)
     
-    titulo = "Auto Glass Repair"
-    c = {'titulo': titulo}
-    template = ""
-    if idser == '1':
-        template = 'servi1.html'
-    elif idser == '2':
-        template = 'servi2.html'
-    elif idser == '3':
-        template = 'servi3.html'
-    elif idser == '4':
-        template = 'servi4.html'
-    elif idser == '5':
-        template = 'servi5.html'
-    elif idser == '6':
-        template = 'servi6.html'
-    else:
-        template = 'servi2.html'
+    if not servicio.valida:
+        ser = Servicios.objects.all()
+        fl = True
+        for se in ser:
+            if se.valida:
+                servicio = se
+                break
+                      
+    titulo = servicio.titulo
+    template = 'servi2.html'
+    return render_to_response(template,context_instance=RequestContext(request,locals()))
         
-    return render_to_response(template,c)
+        
+        
+    
+   
+        
+    
+   
 
 
 def contacto(request):

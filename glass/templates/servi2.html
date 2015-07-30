@@ -2,7 +2,7 @@
   <html>
   <head lang="en">
     <meta charset="UTF-8">
-    <title>Truck Windshield Repair</title>
+    <title>{{ titulo }}</title>
      {% load static from staticfiles  %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/boot/css/bootstrap.css">
@@ -65,35 +65,16 @@
 
       <div class="row featurette">
 		  <div class=" col-md-5">
-          <img class="featurette-image img-responsive imgimport" src="/static/imagenes/info/Truck-Windshield-Repair.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive imgimport" src="{{servicios.foto.url }}" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Truck Windshield Repair <span class="text-muted" id="importa"></span></h2>
-          <p class="lead">
-			 
-			Located near a major trucking route in the Bronx, Master Auto Glass Corp. specializes in professional windshield repair for semitrucks, buses, RVs, and other types of large-scale commercial and personal vehicles. Our oversized service bay gives us ample room to get your vehicle in for a close-up inspection of any dings or cracks to the windshield. That way, we can examine the scope of the damage, determine the level of windshield glass repair required, and get you on your way in next to no time. 
- </p> <p class="lead">
-working on a truck windshieldAt Master Auto Glass Corp., we understand that when it comes to commercial trucks and buses, the need for efficient windshield crack repair and rapid turnaround is especially critical. For every day your vehicle sits in an automotive glass shop waiting to be repaired, you could be missing out on profitable business opportunities and vital income. That’s why we make every effort to focus our full attention on your truck windshield glass repair and get you out the door and back in business as quickly as we possibly can. 
-  </p><p class="lead">
-Of course, safety is our first concern with any windshield repair we handle. All windshield safety standards must be maintained in order for your truck to pass inspections and be considered road worthy. In our effort to speed up your truck windshield repair, Master Auto Glass Corp. will never overlook these important safety guidelines. We’ll simply roll up our sleeves and apply the firsthand knowledge and time-saving techniques we’ve gained over 70 years in the automotive glass industry to your best advantage. We’ll even work directly with all of the leading insurance companies to make your truck windshield repair as painless and hassle-free as possible. </p> 
- <p class="lead">
-Given the expanded dimensions of the glass on the front of trucks, buses, and recreational vehicles, not to mention their frequent use in high-traffic areas and construction zones, it’s easy to see why these large-scale vehicles can be particularly prone to windshield chips and cracks. While you shouldn’t assume you need a whole new front window every time your windshield is damaged, you should have each and every defect inspected and treated by a qualified auto glass company. In most cases, Master Auto Glass Corp. can close off the crack and seal it with a specialized epoxy resin in a matter of minutes. If the severity of the damage warrants an entirely new windshield, our auto glass specialists can help with that as well. We’ll be happy to explain the situation in detail, write you up a price quote, and get started on your truck windshield replacement just as soon as you give us the go ahead.  </p>
- <p class="lead">
-So don’t jeopardize the safety of your trucks or other oversized vehicles, and don’t miss out on business or pleasure because your windshield repair is taking too long. Come to Master Auto Glass Corp. in the Bronx for windshield glass repair and truck windshield replacement that’s not only safe and secure, but also fast, every time. Contact us by phone or e-mail today! </p>
- <p class="lead">
-And remember, Master Auto Glass Corp. is fully licensed, bonded, and insured for your complete satisfaction. We also back our truck windshield repair with a lifetime warranty against leaks and defective materials.
-			 </p>
+          <h2 class="featurette-heading">{{ servicios.titulo }} <span class="text-muted" id="importa"></span></h2>
+          
+			 {{ servicios.informacion | safe }}
+       
         </div>
         
       </div>
-
-
-
-
-
-
-
-
 
 
    </div>
