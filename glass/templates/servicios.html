@@ -70,77 +70,22 @@
 <!-- comienza la informacion -->
 
 <div id="servi">
-
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
+ {% for s in servi %}
+         <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
          <div class="thumbnail">
-           <img  id="imgs"  class="img-responsive img-service" src="/static/imagenes/info/Auto-Glass-Repair.jpg" alt="...">
+           <img  id="imgs"  class="img-responsive img-service" src="{{ s.foto.url }}" alt="...">
            <div class="caption">
-             <h3>Auto Glass Repair</h3>
-             <p>As automobile design has undergone numerous developments over the years, the amount of area devoted to windshields and windows has continued...</p>
-             <p><a href="{% url "detalleservice" 1 %}" class="btn btn-primary" role="button">View details &raquo;</a></p>
+             <h3>{{ s.titulo }}</h3>
+             <div class="sinfo">
+             <p>{{ s.informacion | safe }}</p>               
+            </div>
+             <p><a href="{% url "detalleservice" 2 %}"  class="btn btn-primary" role="button">View details &raquo;</a> </p>
+               
            </div>
          </div>
        </div>
     
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
-         <div class="thumbnail">
-           <img   id="imgs"  class="img-responsive img-service" src="/static/imagenes/info/Truck-Windshield-Repair1.jpg" alt="...">
-           <div class="caption">
-             <h3>Truck Windshield Repair</h3>
-             <p>Located near a major trucking route in the Bronx, Master Auto Glass Corp. specializes in professional windshield repair for...</p>
-             <p><a href="{% url "detalleservice" 2 %}"  class="btn btn-primary" role="button">View details &raquo;</a> </p>
-           </div>
-         </div>
-       </div>
-
-
-        <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
-         <div class="thumbnail">
-           <img id="imgs"  class="img-responsive img-service" src="/static/imagenes/info/Auto-Glass-Replacement.jpg" alt="...">
-           <div class="caption">
-             <h3>Auto Glass Replacement</h3>
-             <p>As anyone who drives on a daily basis knows, the road can be a dangerous place. Accidents can happen at any time, heavy storms can...</p>
-             <p><a href="{% url "detalleservice" 3 %}"  class="btn btn-primary" role="button">View details &raquo;</a> </p>
-           </div>
-         </div>
-       </div>
-
-
-        <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
-         <div class="thumbnail">
-           <img  id="imgs" class="img-responsive img-service" src="/static/imagenes/info/Windshield-Repairs.jpg" alt="...">
-           <div class="caption">
-             <h3>Windshield Repairs</h3>
-             <p>It can happen in the blink of an eye. Just one flying rock, stray golf ball, or other unfortunate incident can leave you with a deep ...</p>
-             <p><a href="{% url "detalleservice" 4 %}"  class="btn btn-primary" role="button">View details &raquo;</a> </p>
-           </div>
-         </div>
-       </div>
-
-
-        <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
-         <div class="thumbnail">
-           <img  id="imgs" class="img-responsive img-service" src="/static/imagenes/info/Windshield-Replacement.jpg" alt="...">
-           <div class="caption">
-             <h3>Windshield Replacement</h3>
-             <p>Extensive damage to your windshield glass can make for one scary ride. Instead of acting as a protective barrier between you, your ...</p>
-             <p><a href="{% url "detalleservice" 5 %}"  class="btn btn-primary" role="button">View details &raquo;</a> </p>
-           </div>
-         </div>
-       </div>
-
-
-        <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id ="item">
-         <div class="thumbnail">
-           <img  id="imgs" class="img-responsive img-service" src="/static/imagenes/info/Window-Regulator-Replacement.jpg" alt="...">
-           <div class="caption">
-             <h3>Window Regulator Replacement</h3>
-             <p>Unlike the manual windows of old, most of today’s vehicles come equipped with automatic windows that go up and...</p>
-             <p><a href="{% url "detalleservice" 6 %}"  class="btn btn-primary" role="button">View details &raquo;</a> </p>
-           </div>
-         </div>
-       </div>
-
+     {% endfor %} 
 </div>
 
   </div>
@@ -170,10 +115,19 @@ Call us: (718) 542-8200 Last Updated:NOW.</p>
 
 <script type="text/javascript">
     
+
 $(document).ready(function(){
+
 $('#servi').masonry();
  setTimeout ("$('#servi').masonry();", 1000); 
+
+
+
+
+
 });
+
+
 </script>
 
 
