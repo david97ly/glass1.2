@@ -97,8 +97,9 @@
            <img  id="imgs"  class="img-responsive img-service" src="{{ s.foto.url }}" alt="...">
            <div class="caption">
              <h3>{{ s.titulo }}</h3>
-             <p class="sinfo">{{ s.informacion | safe }}</p>               
-         
+             <div class="sinfo"
+             <p >{{ s.informacion | safe }}</p>               
+            </div>
              <p><a href="{% url "editarservicio" s.id %}" class="btn btn-primary" role="button">Editar &raquo;</a>
             
              <a href="{% url "eliminarserivicio" s.id %}" class="btn btn-primary" role="button">Elimiminar &raquo;</a></p>
