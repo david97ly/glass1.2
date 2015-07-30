@@ -122,11 +122,12 @@ background: #ff511e;
 
  p{
   font-size: 16px;
+  text-align: justify;
  }
 
  
  
 .sinfo{
   overflow: hidden;
-  width: 100%;
+ 
 }
