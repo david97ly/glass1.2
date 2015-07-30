@@ -130,3 +130,7 @@ background: #ff511e;
  }
  
  
+.sinfo{
+  overflow: hidden;
+  width: 100%;
+}

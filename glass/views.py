@@ -49,6 +49,12 @@ def servicios(request):
     
     visi.servi = visi.servi + 1
     visi.save()
+    servi =[]
+   
+    ser = Servicios.objects.all()
+    for s in ser:
+        if s.valida:
+            servi.append(s)
     
     titulo = "SERVICIOS"
     template = 'servicios.html'
