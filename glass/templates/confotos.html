@@ -83,6 +83,7 @@
            <!--    <p><a class="btn btn-large btn-primary " id="new" href="" >Agregar nuevo Slider</a></p>-->
                <br>
     <br>
+    <div id="idfoto">
                        {% for s in fot %}
     
             <!-- Carousel
@@ -90,9 +91,9 @@
   
       <!-- Indicators -->
    
-       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 cuadro">
+       <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 cuadro" id="item">
          <div class="thumbnail">
-           <img  id="imgs"  class="img-responsive img-service" src="{{ s.ruta.url }}" alt="...">
+           <img  class="img-responsive img-service" src="{{ s.ruta.url }}" alt="...">
            <div class="caption">
              <h3>{{ s.nombre }}</h3>          
             <p><a href="{% url "editarfoto" s.id %}" class="btn btn-primary" role="button">Editar &raquo;</a>
@@ -103,6 +104,8 @@
   
       
       {% endfor %} 
+      
+      </div>
     </div><!-- /.carousel -->
         
       </div>
@@ -110,9 +113,18 @@
     <script src="/static/js/jquery-1.2.6.min.js"></script>
     <script src="/static/js/ajax.js"></script>
     <script src="/static/boot/js/bootstrap.js" type="text/javascript"></script>
-    <script>
+    
+      <script src="/static/js/mazori.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+ 
       
-      
+ $('#idfoto').masonry();
+ setTimeout("$('#idfoto').masonry();", 2000); 
+
+
+
       $(document).on('ready',function(){
         
         $('#new').on('click',mostrarform);
