@@ -65,10 +65,11 @@ class Contactos(models.Model):
 
 	
 class Servicios(models.Model):
-	titulo = models.CharField(max_length=500)
-	informacion = HTMLField()
-	valida = models.BooleanField(default=False)
-	foto = models.ImageField(upload_to='photos')
+	titulo = models.CharField(max_length=500,null=True)
+	informacion = HTMLField(null=True)
+	valida = models.BooleanField(default=False,null=True)
+	orden = models.ForeignKey(Order)
+	foto = models.ImageField(upload_to='photos', null=True)
 
 	def __unicode__(self):
 		return "%s " % (self.titulo)
@@ -86,7 +87,6 @@ class Visitas(models.Model):
 	fotos = models.IntegerField(default=0)
 	contacto= models.IntegerField(default=0)
 	mapa = models.IntegerField(default=0)
-	
 	
 	def __unicode__(self):
 		return "home %i - servicios %i - fotos %i - contactos %i - mapa %i" % (self.home, self.servi,self.fotos,self.contacto,self.mapa)
