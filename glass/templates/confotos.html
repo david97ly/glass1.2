@@ -98,7 +98,13 @@
              <h3>{{ s.nombre }}</h3>          
             <p><a href="{% url "editarfoto" s.id %}" class="btn btn-primary" role="button">Editar &raquo;</a>
              <a href="{% url "eliminarfoto" s.id %}" class="btn btn-primary" role="button">Eliminar &raquo;</a></p>
-             <a id="btvalido"  class="btn btn-danger" role="button">Desactivado</a></p>
+             
+               {% if s.valida %}
+                <a id="btvalido"  class="btn btn-success" role="button">Activada</a></p>
+             
+               {% else %}
+                <a id="btvalido"  class="btn btn-danger" role="button">Desactivada</a></p>
+               {% endif %}
            </div>
          </div>
        </div>
