@@ -156,12 +156,9 @@
       <div class="thumbnail">
       <img src="/static/imagenes/banner/primer.jpg" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
-        <h2>Auto Glass Repair</h2>
-         <p><b>Completa Replacement:</b> By failing to seek professional </p>
-         <p><b>Compromised Safety:</b> Flawed glass presents a variety of dangers, such as greater risk of shattering and decreased visibility on the road. </p>
-         <p><b>Inconvenience:</b> A significant crack or other major flaw in your automotive glass could prevent you from raising or lowering your car’s front or back windows.</p>
-         <p><b>Failed Inspections:</b> Depending on the size or location of your auto glass's damage, you may not be able to pass standard vehicle safety inspections.</p>
-        <p><a class="btn btn-default " href="{% url "detalleservice" 21 %}" id="vdetalle1">View details &raquo;</a></p>
+        <h2>{{ primero.titulo }}</h2>
+         {{primero.informacion}}
+        <p><a class="btn btn-default " href="{% url "detalleservice" primero.id %}" id="vdetalle1">View details &raquo;</a></p>
       </div>
     </div>
     </div> <!-- /.collg-4 -->
@@ -170,21 +167,9 @@
       <div class="thumbnail">
       <img src="/static/imagenes/banner/segundo.jpg" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
-        <h2>Auto Glass Replacement</h2>
-          <p> The good news is, regardless of how the damage occurred, auto glass replacement doesn’t have to take days and it doesn’t have to cost you a fortune. </p>
-         <p> Wherever you are in the Bronx, Manhattan, or Westchester County, Master Auto Glass Corp.</p>
-          <p> Can remove your broken window, replace it with high-quality automotive glass to match the make and model of your vehicle, and send you on your way lickety-split, good as new. </p>
-          <p> Our dedicated team of licensed technicians is just a phone call away to help with all of your auto glass replacement needs, including:</p>
-       <b>  <ul>
-           <li>Front and rear windshields</li>
-           <li>Car door windows</li>
-           <li>Side windows</li>
-           <li>Quarter glass</li>
-           <li>Side mirrors</li>
-           <li>And more...</li>
-         </ul>
-         </b>
-       <p><a class="btn btn-default" href="{% url "detalleservice" 20 %}" id="vdetalle2">View details &raquo;</a></p>
+        <h2>segundo.titulo</h2>
+        {{ segundo.informacion }}
+       <p><a class="btn btn-default" href="{% url "detalleservice" segundo.id %}" id="vdetalle2">View details &raquo;</a></p>
       </div>
     </div>
     </div> <!-- /.collg-4 -->
@@ -192,9 +177,9 @@
       <div class="thumbnail">
       <img src="/static/imagenes/banner/tercer.jpg" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
-        <h2>Window Regulator Replacement</h2>
-      <p> Unlike the manual windows of old, most of today’s vehicles come equipped with automatic windows that go up and down at the touch of a button.</p><p> But what happens when your car window regulator no longer functions properly, making it impossible to raise or lower your vehicle’s front or back windows? From allowing in wind and rain to presenting serious security issues, a broken or malfunctioning window regulator is one component of your car you’ll want to have replaced and soon.</p> <p>So whether you’ve noticed your power windows moving very slowly or they’ve stopped working altogether, it’s time to pick up the phone and dial Master Auto Glass Corp.</p>
-       <p><a class="btn btn-default" href="{% url "detalleservice" 22 %}" id="vdetalle3">View details &raquo;</a></p>
+        <h2>{{ tercero.titulo }}</h2>
+      {{ tercero.informacion }}
+       <p><a class="btn btn-default" href="{% url "detalleservice" tercero.id %}" id="vdetalle3">View details &raquo;</a></p>
       </div>
     </div>
     </div> <!-- /.collg-4 --> 

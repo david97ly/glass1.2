@@ -18,6 +18,9 @@ def home(request):
     template = "home.html"
     slider = Slide.objects.all()
     ban = Mensajeb.objects.all()
+    primero = Servicios.get.(orden.orden = 'Primero')
+    segundo = Servicios.get.(orden.orden = 'Segundo')
+    tercero = Servicios.get.(orden.orden = 'Tercero')
     
     for b in ban:
         if b.valida:
