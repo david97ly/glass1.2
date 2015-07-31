@@ -268,3 +268,7 @@
   overflow: hidden;
   text-align: justify;
 }
+
+.img-circle{
+  width: 150px; 
+}
