@@ -67,7 +67,7 @@ class Contactos(models.Model):
 class Servicios(models.Model):
 	titulo = models.CharField(max_length=500,null=True)
 	informacion = HTMLField(null=True)
-	valida = models.BooleanField(default=False,null=True)
+	valida = models.BooleanField(default=False)
 	orden = models.ForeignKey(Order)
 	foto = models.ImageField(upload_to='photos', null=True)
 
