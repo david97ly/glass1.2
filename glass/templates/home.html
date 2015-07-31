@@ -156,8 +156,10 @@
       <div class="thumbnail">
       <img src="/static/imagenes/banner/primer.jpg" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
+         <div class="informa">
         <h2>{{ primero1.titulo }}</h2>
          {{primero1.informacion | safe}}
+          </div>
         <p><a class="btn btn-default " href="{% url "detalleservice" primero1.id %}" id="vdetalle1">View details &raquo;</a></p>
       </div>
     </div>
@@ -168,7 +170,9 @@
       <img src="/static/imagenes/banner/segundo.jpg" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
         <h2>{{segundo1.titulo}}</h2>
+        <div class="informa">
         {{ segundo1.informacion | safe }}
+        </div>
        <p><a class="btn btn-default" href="{% url "detalleservice" segundo1.id %}" id="vdetalle2">View details &raquo;</a></p>
       </div>
     </div>
@@ -178,7 +182,9 @@
       <img src="/static/imagenes/banner/tercer.jpg" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
         <h2>{{ tercero1.titulo }}</h2>
+         <div class="informa">
       {{ tercero1.informacion | safe }}
+       </div>
        <p><a class="btn btn-default" href="{% url "detalleservice" tercero1.id %}" id="vdetalle3">View details &raquo;</a></p>
       </div>
     </div>
