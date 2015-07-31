@@ -51,7 +51,7 @@
                   <li><a href="{% url "conf" %}"><span class="glyphicon glyphicon-home">Slider</span></a></li>
                   <li><a href="{% url "banner" %}"><span class="glyphicon glyphicon-info-sign">Baner W</span></a></li>
                   <li><a href="/ubicacion"><span class="glyphicon glyphicon-map-marker">Contactos</span></a></li>
-                  <li><a href="/fotos"><span class="glyphicon glyphicon-picture"></span>Fotos</a></li>
+                  <li><a href="{% url "cfotos" %}"><span class="glyphicon glyphicon-picture"></span>Fotos</a></li>
                   <li><a href="{% url "cservicios" %}"><span class="glyphicon glyphicon-phone-alt">Servicios</span></a></li>
                   <li><a href="{% url "home" %}"><span class="glyphicon glyphicon-question-sign">Home</span></a></li>
                </ul>
@@ -78,7 +78,7 @@
   
       <!-- Indicators -->
     
-        <div class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 cuadro" id="item">
+        <div class="col-xs-12 col-sm-6 col-dm-6 col-lg-6" id="item">
          <div class="thumbnail">
            <img  class="img-responsive img-service" src="{{ s.ruta.url }}" alt="...">
            <div class="caption">
