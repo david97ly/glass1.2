@@ -68,7 +68,7 @@ class Servicios(models.Model):
 	titulo = models.CharField(max_length=500,null=True)
 	informacion = HTMLField(null=True)
 	valida = models.BooleanField(default=False)
-	orden = models.ForeignKey(Order,null=True,default="Ninguno")
+	orden = models.ForeignKey(Order,null=True)
 	foto = models.ImageField(upload_to='photos', null=True)
 
 	def __unicode__(self):

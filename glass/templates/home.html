@@ -156,8 +156,8 @@
       <div class="thumbnail">
       <img src="{{ primero1.foto.url }}" alt="..." class="img-circle img-responsive" id="imgc1">
       <div class="caption">
+         <h2>{{ primero1.titulo }}</h2>
          <div class="informa">
-        <h2>{{ primero1.titulo }}</h2>
          {{primero1.informacion | safe}}
           </div>
         <p><a class="btn btn-default " href="{% url "detalleservice" primero1.id %}" id="vdetalle1">View details &raquo;</a></p>
