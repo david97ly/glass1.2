@@ -23,19 +23,49 @@ def home(request):
     primero1 = ""
     segundo1 = ""
     tercero1 = ""
+    contador1 = 0
+    f1 = False
+    f2 = False
+    f3 = False
    
     
     for s1 in servi:
         if s1.valida:
             if s1.orden.orden == "Primero":
                 primero1 = s1
-              
+                contador1 += 1
+                f1 = True
             if s1.orden.orden == "Segundo":
                 segundo1 = s1
-            
+                contador1 += 1
+                f2 = True
             if s1.orden.orden == "Tercero":
                 tercero1 = s1
+                contador1 += 1
+                f3 = True
                 
+    if not f1 and not f2 and not f3:
+        if contador1 < 3:
+            if primero1 =="":
+                if not segundo1 =="":
+                    primero1 = segundo1
+                elif not tercero1 =="":
+                    primero1 =tercero1
+            
+            if segundo1 =="":
+                if not primero1 =="":
+                    segundo1 = primero1
+                elif not tercero1 =="":
+                    segundo1 =tercero1
+                    
+            if tercero1 =="":
+                if not segundo1 =="":
+                    tercero1 = segundo1
+                elif not primero1 =="":
+                    tercero1 =primero1        
+            
+                    
+         
         
              
     

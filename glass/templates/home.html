@@ -148,9 +148,11 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+
+      {% not primero1 == "" %}
+    <div class="container marketing">   <!-- container servicios relevantes -->
       
-      <!-- Three columns of text below the carousel -->
+      
       <div class="row">
        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
       <div class="thumbnail">
@@ -191,8 +193,8 @@
     </div> <!-- /.collg-4 --> 
       </div><!-- /.row -->
 
-</div><!-- /.container -->
-
+</div><!-- /.container servicios relevantes -->
+{% endif %}
 
 
 
