@@ -48,19 +48,19 @@ def home(request):
         if primero1 =="":
             if not segundo1 =="":
                 primero1 = segundo1
-                elif not tercero1 =="":
+            elif not tercero1 =="":
                 primero1 =tercero1
             
         if segundo1 =="":
             if not primero1 =="":
                 segundo1 = primero1
-                elif not tercero1 =="":
+            elif not tercero1 =="":
                 segundo1 =tercero1
                     
         if tercero1 =="":
             if not segundo1 =="":
                 tercero1 = segundo1
-                elif not primero1 =="":
+            elif not primero1 =="":
                 tercero1 =primero1
         
                     
