@@ -70,16 +70,17 @@
             
     <br>
     <br>
+     <div id="idfoto">
                        {% for s in fot %}
     
             <!-- Carousel
     ================================================== -->
   
       <!-- Indicators -->
-     <div id="idfoto">
+    
        <div  class="col-xs-12 col-sm-6 col-dm-4 col-lg-4 " id="item">
          <div class=" thumbnail" >
-           <img    class="img-responsive" src="{{ s.ruta.url }}" alt="...">
+           <img class="img-responsive" src="{{ s.ruta.url }}" alt="...">
            <div class="hola{{s.id}}">
             <h2><b> {{ s.nombre }}<b></h2>
             </div>
