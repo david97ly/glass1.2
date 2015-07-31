@@ -23,15 +23,22 @@ def home(request):
     primero1 = ""
     segundo1 = ""
     tercero1 = ""
+    contador1 = 0
     
     for s1 in servi:
         if s1.valida:
             if s1.orden.orden == "Primero":
                 primero1 = s1
+                contador1 += 1
             if s1.orden.orden == "Segundo":
                 segundo1 = s1
+                contador1 += 1
             if s1.orden.orden == "Tercero":
                 tercero1 = s1
+                contador1 += 1
+        if contador1 == 3:
+             break
+             
     
     for b in ban:
         if b.valida:
