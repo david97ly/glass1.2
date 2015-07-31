@@ -109,6 +109,15 @@
                {% else %}
                 <a id="btvalido"  class="btn btn-danger" role="button">Desactivada</a></p>
                {% endif %}
+               
+               
+                {% if not s.orden.orden == 'Ninguna' %}
+                <a id="btvalido"  class="btn btn-warning" role="button">{{s.orden.orden}}</a></p>
+             
+               {% else %}
+                <a id="btvalido"  class="btn btn-default" role="button">Ninguno</a></p>
+               {% endif %}
+               
            </div>
          </div>
        </div>
