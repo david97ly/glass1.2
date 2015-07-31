@@ -26,11 +26,11 @@ def home(request):
     
     for s1 in servi:
         if s1.valida:
-            if s.orden.orden == "Primero":
+            if s1.orden.orden == "Primero":
                 primero1 = s1
-            if s.orden.orden == "Segundo":
+            if s1.orden.orden == "Segundo":
                 segundo1 = s1
-            if s.orden.orden == "Tercero":
+            if s1.orden.orden == "Tercero":
                 tercero1 = s1
     
     for b in ban:
