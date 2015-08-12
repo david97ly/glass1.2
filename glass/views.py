@@ -27,6 +27,8 @@ def home(request):
     f1 = False
     f2 = False
     f3 = False
+
+
    
     
     for s1 in servi:
